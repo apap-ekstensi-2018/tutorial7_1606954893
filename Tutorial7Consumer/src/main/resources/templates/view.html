@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>View Student by NPM</title>
+        <div th:replace="fragments/fragment :: header"></div>
+    </head>
+    <body>
+		<div style="padding-left: 1.7ch;">
+		    <div class="row">
+		    	<div class="col-sm-1">
+		    		<h3>NPM</h3>
+		    		<h3>Name</h3>
+		   			<h3>GPA</h3>
+		    	</div>
+		    	<div class="col-sm-11">
+		    		<h3 th:text="' = ' + ${student.npm}"></h3>
+				    <h3 th:text="' = ' + ${student.name}"></h3>
+				    <h3 th:text="' = ' + ${student.gpa}"></h3>
+		    	</div>
+		    </div>
+	    </div>    
+    <div th:replace="fragments/fragment :: footer"></div>
+    </body>
+</html>
+
